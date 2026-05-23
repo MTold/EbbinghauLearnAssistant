@@ -107,7 +107,7 @@ async function handleDelete(id: number) {
       {{ store.error }}
     </div>
 
-    <div v-if="loading && store.items.length === 0" class="loading">
+    <div v-if="store.loading && store.items.length === 0" class="loading">
       <div class="spinner"></div>
       <p>加载中...</p>
     </div>
